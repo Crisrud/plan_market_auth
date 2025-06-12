@@ -58,7 +58,7 @@ class PlanMarketAuth with ChangeNotifier {
         });
     if (response.statusCode == 200) {
       _mensagem = 'Usuário criado com sucesso';
-      print('MENSAGEM')
+      print('MENSAGEM');
       print(_mensagem);
       final responseData = json.decode(response.body);
       token = responseData['idToken'];
