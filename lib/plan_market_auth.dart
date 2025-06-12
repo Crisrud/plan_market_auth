@@ -15,6 +15,10 @@ class PlanMarketAuth with ChangeNotifier {
   final _resource = "/v1/accounts";
   final apikey = 'AIzaSyDek1Qb1p8EPhZZZ8GtbGWjic62awCfUNc';
 
+  get mensagemErro {
+    return _mensagem;
+  }
+
 
   Future<bool> signUp(String email, String pass) async {
     String sUri = '$_url$_resource:signUp?key=$apikey';
